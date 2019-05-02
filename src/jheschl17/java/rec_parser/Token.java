@@ -11,6 +11,9 @@ import java.util.List;
  */
 public abstract class Token {
 
+    Token() {
+    }
+    
     /**
      * <pre>
      * Analyses the given String as to whether or not it is a

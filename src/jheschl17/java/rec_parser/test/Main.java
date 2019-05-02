@@ -26,7 +26,7 @@ public class Main extends Application {
     public void start(Stage primaryStage) throws Exception {
         AnchorPane root = new AnchorPane();
         
-        Label formula = new Label("Expresssion:");
+        Label formula = new Label("Expression:");
         TextField formulaInput = new TextField();
         Button check = new Button("Check this expression");
         Label checkResult = new Label("Syntactically legal:");

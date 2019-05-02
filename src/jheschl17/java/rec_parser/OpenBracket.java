@@ -23,6 +23,7 @@ public class OpenBracket extends Token {
         
         if (nextChar == '*') legal = false;
         if (nextChar == '/') legal = false;
+        if (nextChar == ')') legal = false;
         
         return legal && nextToken.parseCharactar(nextString);
     }

@@ -23,6 +23,7 @@ public class ClosedBracket extends Token {
         
         if (new Variable().correspondsTo(nextChar)) legal = false;
         if (new Number().correspondsTo(nextChar)) legal = false;
+        if (nextChar == '(') legal = false;
         
         return legal && nextToken.parseCharactar(nextString);
     }

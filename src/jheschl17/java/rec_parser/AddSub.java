@@ -5,7 +5,7 @@ package jheschl17.java.rec_parser;
  * @author Jonas Heschl
  */
 public class AddSub extends Token {
-
+    
     @Override
     protected boolean parseCharactar(String s) {
         // logic
@@ -24,6 +24,7 @@ public class AddSub extends Token {
         
         if (nextChar == ')') legal = false;
         if (this.correspondsTo(nextChar)) legal = false;
+        if (new DivMult().correspondsTo(nextChar)) legal = false;
         
         return legal && nextToken.parseCharactar(nextString);
     }
